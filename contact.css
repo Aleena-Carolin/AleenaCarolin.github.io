@@ -6,13 +6,17 @@
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 
 }
-header{
+section{
   background-image:linear-gradient(rgba(131, 126, 126, 0.5),rgba(146, 136, 136, 0.5)), url(bgg.jpg);
   height: 100vh;
   background-position:center;
 
   background-size:cover;
-  
+
+  margin: auto;
+  text-align: center;
+  padding-top: 10%;
+  color: rgb(2, 2, 46);
   
 }
 ul{
@@ -44,27 +48,10 @@ ul li.active a{
   max-width: 1300px;
   margin: auto;
 }
-.cards{
-  max-width: 1000px;
-  margin: 0 auto;
-  text-align: center;
-  padding: 30px;
 
-}
-.cards h1{
-  font-size: 40px;
-  margin: 0 0 30px 0;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+.course-col{
+ 
 
-}
-.services{
-  display: flex;
-  align-items: center;
-
-}
-.content{
   display:-ms-inline-flexbox;
   flex-wrap: wrap;
   flex: 1;
@@ -72,31 +59,74 @@ ul li.active a{
   padding: 20px;
   box-shadow: 0 0 50px rgb(1, 1, 43);
   border-radius: 25px;
+  width: 25%;
+  float:left;
+  box-sizing: border-box;
+  flex-basis: 31%;
   
-  
-  transition: all .3s ease;
-
 }
-.content img.logo{
-  font-size: 50px;
-  margin: 16px 0;
-  max-width: 2.5cm;
-  left: 20%;
-}
-.content > *{
-  flex: 1 1 100%;
-
-}
-.content h2{
+h2{
   font-size: 30px;
   margin: 16px 0;
   letter-spacing: 1px;
   text-transform: uppercase;
 
 }
-.content p{
+p{
   font-size: 25px;
-  font-family: inherit;
-  color: rgb(2, 2, 92);
+font-family: inherit;
+color: rgb(2, 2, 92);
+
+}
+
+.row:after{
+  content: " ";
+  display: table;
+  clear: both;
   
 }
+.row{
+padding-left: 150px;
+}
+
+@media(max-width: 700px){
+.row{
+  padding-left: 50px;
+}
+h2{
+  font-size: 20px;
+  margin: 10px 0;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+
+}
+p{
+  font-size: 15px;
+font-family: inherit;
+color: rgb(2, 2, 92);
+
+}
+img.logo{
+  font-size: 30px;
+  margin: 6px 0;
+  max-width: 1.5cm;
+  left: 20%;
+}
+}
+
+img.logo{
+font-size: 50px;
+margin: 16px 0;
+max-width: 2.5cm;
+left: 20%;
+}
+
+h1{
+font-size: 40px;
+margin: 0 0 30px 0;
+text-transform: uppercase;
+letter-spacing: 1px;
+font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
